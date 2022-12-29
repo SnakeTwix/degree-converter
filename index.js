@@ -8,9 +8,9 @@ input.addEventListener("input", inputHandler);
 inputButtons.forEach(button => button.addEventListener("input", inputChangeHandler));
 outputButtons.forEach(button => button.addEventListener("input", outputChangeHandler));
 
-const celsiusToKelvin = (degree) => degree - 273;
+const celsiusToKelvin = (degree) => degree + 273;
 const celsiusToFahrenheit = (degree) => degree * 9/5 + 32; 
-const kelvinToCelsius = (degree) => degree + 273;
+const kelvinToCelsius = (degree) => degree - 273;
 const kelvinToFahrenheit = (degree) => (degree - 273) * 9/5 + 32;
 const fahrenheitToCelcius = (degree) => (degree - 32) * 5/9;
 const fahrenheitToKelvin = (degree) => (degree - 32) * 5/9 + 273;
