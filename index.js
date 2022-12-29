@@ -38,6 +38,7 @@ function calculateDegree(degree) {
     const inputMode = input.dataset.mode;
     const outputMode = output.dataset.mode;
 
+    degree = parseFloat(degree)
     let outValue = parseFloat(degree) || 0;
 
     if (inputMode !== outputMode) {
