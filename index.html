@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Conversion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id='input-buttons' class='boxes'>
+        <span>Input type:</span>
+        <input type="radio" id='celsiusInput' checked name="degree-input" value="c">
+        <label for="celsiusInput">Celsius</label>
+        <input type="radio" id='fahrenheitInput' name="degree-input" value='f'>
+        <label for="fahrenheitInput">Fahrenheit</label>
+        <input type="radio" id='kelvinInput' name="degree-input" value='k'>
+        <label for="kelvinInput">Kelvin</label>
+    </div>
+    <input data-mode='c' id='degree-input' type="number" value="0">
+
+    <div id='output-buttons' class='boxes'>
+        <span>Output type:</span>
+        <input type="radio" id='celsiusOutput' checked name="degree-output" value='c'>
+        <label for="celsiusOutput">Celsius</label>
+        <input type="radio" id='fahrenheitOutput' name="degree-output" value='f'>
+        <label for="fahrenheitOutput">Fahrenheit</label>
+        <input type="radio" id='kelvinOutput' name="degree-output" value='k'>
+        <label for="kelvinOutput">Kelvin</label>
+    </div>
+    <div id='outputWrapper'>
+        Resulting degrees: <span data-mode='c' id='degree-output'></span>
+    </div>
+    <script src='index.js'></script>
+</body>
+
+</html>
